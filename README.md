@@ -1,18 +1,45 @@
-# Jose's Portfolio Website
+# Mi Portafolio Web
 
-This is my personal portfolio website showcasing my projects and skills.
+Este es mi sitio web de portafolio personal.
 
-## Getting Started
+## Cómo usar
 
-Open `index.html` in your web browser to view the site.
+### Actualización automática a GitHub
 
-## Technologies Used
+Ejecuta el script `auto_push.sh` para subir automáticamente todos los cambios:
 
-- HTML
-- CSS
+```bash
+./auto_push.sh
+```
 
-## Future Plans
+Este script:
+- Agrega todos los archivos modificados
+- Crea un commit con la fecha actual
+- Sube los cambios a GitHub
 
-- Add JavaScript for interactivity
-- Include project showcases
-- Add contact form
+### Backups (historial de versiones)
+
+Git mantiene automáticamente un historial de todas las versiones. Para ver el historial:
+
+```bash
+git log --oneline
+```
+
+Para ver una versión anterior:
+
+```bash
+git checkout <commit-hash>
+```
+
+Para volver a la versión actual:
+
+```bash
+git checkout main
+```
+
+## Tecnologías
+
+- React
+- Next.js
+- TypeScript
+- Tailwind CSS
